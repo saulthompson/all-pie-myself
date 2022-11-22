@@ -1,0 +1,42 @@
+<!DOCTYPE html lang=en-US>
+<html>
+<head>
+    <title>Monty Piethon</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>    
+
+<body>
+    <header>
+        <nav>
+
+            <div id="username-div">
+                <p>Thy username</p>
+                <br>
+                <input type="username" placeholder="Enter thy username, Sir _..."/>
+            </div>
+            <a id="a1" href="">About</a>
+            <a href="">More Pies</a>
+        </nav>
+    </header>
+
+    <main>
+        <canvas id="canvas" width="100%" height="700px">Error, please try again using a different browser</canvas>
+        <h1 id="heading">Monty Pie-thon and the Knights of the Round Pastry</h1>
+        <button onclick ="PieLaunch()">Release the Pies!</button><p class="score">score: 0</p>
+        <div class="game">
+            
+            <div class="pie-zone"></div>
+            <div class="image-container">
+                <div id="pie-hat"><img id="pie-hat-img" src="pie-hat.jpg"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <img id="pinkPie" src="pink-pie.jpg" style="display: none;">;
+    <img id="heartPie" src="heart-pie.jpg" style="display: none;">;
+    <img id="blueberryPie" src="blueberry-pie.jpg" style="display: none;">
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=MedievalSharp&family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+   margin: 0 auto;
+   max-width: auto;
+   background-color: #1D1D1D;
+   cursor: url('snake-moving.png'), pointer;
+   font-family: 'MedievalSharp', cursive;
+   color:antiquewhite;
+   text-align: center;
+   
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 90px;
+    border-style: double;
+    border-top: 15px;
+    border-color: white;
+    padding: 30px;
+}
+
+
+
+
+a {
+    font-size: 30px;
+    color:antiquewhite;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+
+a::after {
+    content: url('pie-logo.png');
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+#a1::before {
+    content: url('pie-logo.png');
+    position: relative;
+    top: 10px;
+    right: 170px;
+}
+
+.game {
+    background-color: #F4F186;
+}
+
+
+
+.image-container {
+    padding-top: 300px;
+    height: 400px;
+    position: relative;   
+    z-index: 0.5;
+    background-image: url('castle-keep.jpg');
+    background-size: contain;
+    background-position: center;
+
+}
+
+.castle-1  {
+    left: 29%;
+}
+
+.castle-2 {
+    left: 50%;
+}
+
+#pie-hat {
+    max-width: fit-content;
+    position: relative;
+    bottom: 15%;
+    left: 0;
+}
+
+.castle-1, .castle-2 {
+    position: absolute;
+    bottom: 0;
+    border-radius: 5%;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 250px;
+    z-index: 3;
+}
+
+@keyframes explosion {
+    0% {
+        scale: 0.8;
+    }
+    50% {
+        scale: 1.3;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+
+
